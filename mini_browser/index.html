@@ -17,12 +17,12 @@
     <script>
         var aba1 = {
             titulo: 'titulo 1',
-            url: 'url'
+            url: 'https://www.google.com/'
         };
     
         var aba2 = {
             titulo: 'titulo 2',
-            url: 'url'
+            url: 'https://www.youtube.com/'
         };
     
         const abas = [aba1, aba2];
@@ -31,7 +31,7 @@
             console.log(aba.titulo);
 
             var valorAtualDoHtml = document.body.innerHTML;
-            document.body.innerHTML = valorAtualDoHtml + `<a href="">${aba.titulo}<a/>`;
+            document.body.innerHTML = valorAtualDoHtml + `<li><a href="">${aba.titulo}<a/></li>`;
         }
     
     </script>
