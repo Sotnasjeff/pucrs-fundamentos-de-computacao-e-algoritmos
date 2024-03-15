@@ -1,0 +1,40 @@
+<!-- <main>
+    <header>
+        <div class="close-area"></div>
+        <input placeholder="https://..." value="https://mariosouto.com"/>
+    </header>
+    <iframe src="https://mariosouto.com"></iframe>
+</main> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Browser Experimental</title>
+</head>
+<body>
+    <script>
+        var aba1 = {
+            titulo: 'titulo 1',
+            url: 'url'
+        };
+    
+        var aba2 = {
+            titulo: 'titulo 2',
+            url: 'url'
+        };
+    
+        const abas = [aba1, aba2];
+    
+        for(aba of abas) {
+            console.log(aba.titulo);
+
+            var valorAtualDoHtml = document.body.innerHTML;
+            document.body.innerHTML = valorAtualDoHtml + `<a href="">${aba.titulo}<a/>`;
+        }
+    
+    </script>
+    <link rel="stylesheet" href="./style.css"/>
+</body>
+</html>
